@@ -1,0 +1,26 @@
+body {
+	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/doodles.png);
+	text-align: center;
+}
+
+button {
+	height: 80px;
+	width: 200px;
+	background: turquoise;
+	border: white solid 1px;
+	border-radius: 5px;
+	margin-top: 50px;
+	font-family: monospace;
+	font-size: 24px;
+	color: #FAFAFA;
+}
+
+#main-box {
+	margin: auto;
+	margin-top: 200px;
+	background: #FAFAFA;
+	border: grey solid 1px;
+	color: black;
+	height: 300px;
+	width: 500px;
+}
