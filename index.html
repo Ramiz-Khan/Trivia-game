@@ -14,7 +14,7 @@
 		<div id="main-window">
 
 			<form>
-				<button >Start</button>
+				<button class="start-button" >Start</button>
 			</form>
 
 		</div>
@@ -22,7 +22,21 @@
 
 	<script>
 		
+		$(document).ready(function(){
+
+			$(".start-button").click(function(event){
+				
+				var contentArea = $("#main-window");
+
+				contentArea.empty();
+
+				contentArea.html("<form>"+formContent+"</form>");
+
+				console.log("ramiz clicked");
 		
+			});
+
+		});
 
 	</script>
 
