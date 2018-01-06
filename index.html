@@ -4,6 +4,7 @@
 	<title>Trivia Game Basic</title>
 	<link type="text/css" rel="stylesheet" href="Trivia-style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/app.js"></script>
 
 </head>
 <body>
@@ -30,11 +31,15 @@
 
 				contentArea.empty();
 
-				contentArea.html("<form>"+formContent+"</form>");
+				console.log("clicked start");
+				
+				$(contentArea).html("<span id='timer'>").append("<form><p>When did america gain Independence?</p><input type='radio' name='Indep' value='Never' checked> Never<br><input type='radio' name='Indep' value='yesterday'>Yesterday<br><input type='radio' name='Indep' value='A Long Time Ago'> A Long Time Ago<br><button class='submitButton' >Start</button></form>")
 
-				console.log("ramiz clicked");
-		
 			});
+
+
+
+
 
 		});
 
