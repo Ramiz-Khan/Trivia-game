@@ -33,15 +33,34 @@
 
 				console.log("clicked start");
 				
-				$(contentArea).html("<span id='timer'>").append("<form><p>When did america gain Independence?</p><input type='radio' name='Indep' value='Never' checked> Never<br><input type='radio' name='Indep' value='yesterday'>Yesterday<br><input type='radio' name='Indep' value='A Long Time Ago'> A Long Time Ago<br><button class='submitButton' >Start</button></form>")
+				$(contentArea).html("<span id='timer'>").append("<form><p>When did america gain Independence?</p><input type='radio' name='Indep' value='Never' checked> Never<br><input type='radio' name='Indep' value='yesterday'>Yesterday<br><input type='radio' name='Indep' value='A Long Time Ago'> A Long Time Ago<br><button class='submitButton' >Submit</button></form>")
+
+			});
+
+		});
+
+		function getAnswer(){
+					var radio = document.querySelector("form");
+					if (radio[2].checked === true) {
+						alert("Congrats! That answer is correct!");
+
+					} 
+					$("#main-window").html("<h1> WRONG! </h1>");
+
+					}
+
+
+			$(".submitButton").click(function(event){
+
+
+				getAnswer();
+
 
 			});
 
 
 
-
-
-		});
+		
 
 	</script>
 
